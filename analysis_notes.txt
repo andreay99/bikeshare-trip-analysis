@@ -1,0 +1,5 @@
+Bikeshare Trip Analysis Notes
+- Created a mock dataset with 10 trips to simulate Lyft bikeshare data.
+- Focused on queries relevant to urban mobility (duration, revenue, long trips).
+- Optimized the revenue query using GROUP BY for monthly aggregation.
+- Plan to expand with JOINs for multi-table analysis in the future.
