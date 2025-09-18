@@ -1,7 +1,7 @@
 -- Bikeshare Trip Analysis SQL Script
--- Created by Andrea A. Yanez Soto, September 2025
+-- Created by Andrea A. Yanez Soto, September 18, 2025
+-- Purpose: Analyze mock bikeshare data for urban mobility insights
 
--- Create the bikeshare_trips table
 CREATE TABLE bikeshare_trips (
     rider_id INTEGER,
     trip_date DATE,
@@ -11,7 +11,6 @@ CREATE TABLE bikeshare_trips (
     cost REAL
 );
 
--- Insert sample data (10-20 rows)
 INSERT INTO bikeshare_trips VALUES
 (1, '2025-09-01', 'Manhattan', 'Brooklyn', 15, 2.5),
 (1, '2025-09-02', 'Brooklyn', 'Queens', 25, 3.0),
@@ -22,7 +21,12 @@ INSERT INTO bikeshare_trips VALUES
 (4, '2025-09-01', 'Manhattan', 'Queens', 12, 2.0),
 (4, '2025-09-05', 'Brooklyn', 'Manhattan', 18, 2.5),
 (5, '2025-09-06', 'Queens', 'Manhattan', 40, 4.5),
-(5, '2025-09-07', 'Manhattan', 'Brooklyn', 22, 3.0);
+(5, '2025-09-07', 'Manhattan', 'Brooklyn', 22, 3.0),
+(6, '2025-09-08', 'Brooklyn', 'Queens', 28, 3.5),
+(6, '2025-09-09', 'Queens', 'Manhattan', 14, 2.0),
+(7, '2025-09-10', 'Manhattan', 'Brooklyn', 19, 2.5),
+(7, '2025-09-11', 'Brooklyn', 'Queens', 33, 4.0),
+(8, '2025-09-12', 'Queens', 'Manhattan', 16, 2.0);
 
 -- Query 1: Average trip duration per start location
 SELECT start_location, AVG(duration_minutes) AS avg_duration
